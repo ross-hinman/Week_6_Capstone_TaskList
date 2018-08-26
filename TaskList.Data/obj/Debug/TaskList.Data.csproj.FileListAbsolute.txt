@@ -1,0 +1,13 @@
+C:\Users\GC Student\Source\Repos\Week_6_Capstone_TaskList\TaskList.Data\obj\Debug\TaskList.Data.csprojResolveAssemblyReference.cache
+C:\Users\GC Student\Source\Repos\Week_6_Capstone_TaskList\TaskList.Data\obj\Debug\TaskList.Data.csproj.CoreCompileInputs.cache
+C:\Users\GC Student\Source\Repos\Week_6_Capstone_TaskList\TaskList.Data\bin\Debug\TaskList.Data.dll.config
+C:\Users\GC Student\Source\Repos\Week_6_Capstone_TaskList\TaskList.Data\bin\Debug\TaskList.Data.dll
+C:\Users\GC Student\Source\Repos\Week_6_Capstone_TaskList\TaskList.Data\bin\Debug\TaskList.Data.pdb
+C:\Users\GC Student\Source\Repos\Week_6_Capstone_TaskList\TaskList.Data\bin\Debug\EntityFramework.dll
+C:\Users\GC Student\Source\Repos\Week_6_Capstone_TaskList\TaskList.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\GC Student\Source\Repos\Week_6_Capstone_TaskList\TaskList.Data\bin\Debug\TaskList.Domain.dll
+C:\Users\GC Student\Source\Repos\Week_6_Capstone_TaskList\TaskList.Data\bin\Debug\TaskList.Domain.pdb
+C:\Users\GC Student\Source\Repos\Week_6_Capstone_TaskList\TaskList.Data\bin\Debug\EntityFramework.xml
+C:\Users\GC Student\Source\Repos\Week_6_Capstone_TaskList\TaskList.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\GC Student\Source\Repos\Week_6_Capstone_TaskList\TaskList.Data\obj\Debug\TaskList.Data.dll
+C:\Users\GC Student\Source\Repos\Week_6_Capstone_TaskList\TaskList.Data\obj\Debug\TaskList.Data.pdb

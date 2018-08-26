@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="TaskListDataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="TaskListDataModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Users" EntityType="TaskListDataModel.User" />
+    <EntitySet Name="Tasks" EntityType="TaskListDataModel.Task" />
+    <AssociationSet Name="UserTask" Association="TaskListDataModel.UserTask">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Task" EntitySet="Tasks" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" Nullable="false" Unicode="true" MaxLength="20" />
+    <Property Name="Email" Type="String" Nullable="false" Unicode="true" MaxLength="25" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="25" Unicode="true" />
+    <NavigationProperty Name="Tasks" Relationship="TaskListDataModel.UserTask" FromRole="User" ToRole="Task" />
+  </EntityType>
+  <EntityType Name="Task">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" Nullable="false" Unicode="true" />
+    <Property Name="DueDate" Type="DateTimeOffset" Nullable="false" />
+    <Property Name="Completed" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="TaskListDataModel.UserTask" FromRole="Task" ToRole="User" />
+    <Property Name="UserId" Type="String" Nullable="false" />
+  </EntityType>
+  <Association Name="UserTask">
+    <End Type="TaskListDataModel.User" Role="User" Multiplicity="1" />
+    <End Type="TaskListDataModel.Task" Role="Task" Multiplicity="*" />
+  </Association>
+</Schema>

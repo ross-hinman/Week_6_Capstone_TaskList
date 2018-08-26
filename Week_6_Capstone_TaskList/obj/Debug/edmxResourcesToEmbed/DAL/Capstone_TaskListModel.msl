@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="Capstone_TaskListModel" />
+  <Alias Key="Target" Value="Capstone_TaskListModel.Store" />
+  <EntityContainerMapping CdmEntityContainer="Capstone_TaskListModelContainer" StorageEntityContainer="Capstone_TaskListModelTargetContainer" />
+</Mapping>

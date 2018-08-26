@@ -1,0 +1,5 @@
+C:\Users\GC Student\Source\Repos\Week_6_Capstone_TaskList\TaskList.Domain\bin\Debug\TaskList.Domain.dll
+C:\Users\GC Student\Source\Repos\Week_6_Capstone_TaskList\TaskList.Domain\bin\Debug\TaskList.Domain.pdb
+C:\Users\GC Student\Source\Repos\Week_6_Capstone_TaskList\TaskList.Domain\obj\Debug\TaskList.Domain.csproj.CoreCompileInputs.cache
+C:\Users\GC Student\Source\Repos\Week_6_Capstone_TaskList\TaskList.Domain\obj\Debug\TaskList.Domain.dll
+C:\Users\GC Student\Source\Repos\Week_6_Capstone_TaskList\TaskList.Domain\obj\Debug\TaskList.Domain.pdb

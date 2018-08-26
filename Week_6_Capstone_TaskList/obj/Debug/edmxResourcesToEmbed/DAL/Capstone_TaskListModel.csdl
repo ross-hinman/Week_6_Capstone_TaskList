@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Capstone_TaskListModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="Capstone_TaskListModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Users" EntityType="Capstone_TaskListModel.User" />
+    <EntitySet Name="Tasks" EntityType="Capstone_TaskListModel.Task" />
+    <AssociationSet Name="UserTask" Association="Capstone_TaskListModel.UserTask">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Task" EntitySet="Tasks" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="30" Unicode="true" />
+    <Property Name="Email" Type="String" Nullable="false" Unicode="true" MaxLength="30" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="25" Unicode="true" />
+    <NavigationProperty Name="Tasks" Relationship="Capstone_TaskListModel.UserTask" FromRole="User" ToRole="Task" />
+  </EntityType>
+  <EntityType Name="Task">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="50" Unicode="true" />
+    <Property Name="DueDate" Type="DateTimeOffset" Nullable="false" />
+    <Property Name="Completed" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="UserId" Relationship="Capstone_TaskListModel.UserTask" FromRole="Task" ToRole="User" />
+  </EntityType>
+  <Association Name="UserTask">
+    <End Type="Capstone_TaskListModel.User" Role="User" Multiplicity="1" />
+    <End Type="Capstone_TaskListModel.Task" Role="Task" Multiplicity="*" />
+  </Association>
+</Schema>
